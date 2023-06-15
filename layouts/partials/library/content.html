@@ -1,9 +1,22 @@
 <section>
 	<div class="container">
 		<div class="big-padding">
-			<div id="lib-content">
+			<div id="lib-title">
 			{{ .Content}}
 			</div>
+
+			{{ with .Site.GetPage "library" }} 
+				{{ range .Pages }}
+
+					<div id="lib-year" class="mb-4">{{ .Title }}</div>
+					<div class="row row-cols-4 gy-5 mb-5" id="book-list">
+						{{ range .Pages }}
+							{{ .Content }}
+						{{ end }}
+					</div>
+				{{ end }}
+			{{ end}}
+			
 		</div>
 	</div>
 </section>

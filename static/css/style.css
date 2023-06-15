@@ -33,17 +33,17 @@
 	margin-bottom: 3em
 }
 
-#lib-content p:first-child {
+#lib-title {
 	font-size: 40px;
 	font-weight: 700;
 }
 
-#lib-content p:not(p:first-child) {
+#lib-year {
 	font-weight: 600;
 }
 
-#lib-content p:has(img) {
-	display: inline-grid;
+#book-list p {
+	/*padding: 0px;*/
 }
 
 
