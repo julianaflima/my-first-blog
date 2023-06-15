@@ -1,0 +1,17 @@
+<section>
+	<div class="container text-bg-primary">
+		<div class="big-padding">
+			<div class="d-flex">
+				<div class="text-uppercase bg-light d-flex rounded border border-light">
+					<div class="bg-primary px-2 py-1 rounded-start">
+						{{ .Params.tag }}
+					</div>
+					<div class="px-2 py-1 bg-light text-primary rounded-end">
+						{{ .Date | time.Format ":date_long" }}
+					</div>
+				</div>
+			</div>
+			<h1 class="fw-bold font-size-52">{{ .Title }}</h1>
+		</div>
+	</div>
+</section>
