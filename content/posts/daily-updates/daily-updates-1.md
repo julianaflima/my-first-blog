@@ -12,7 +12,6 @@ main_picture: "/images/front-image.png"
 short_description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse distinctio laudantium vero tenetur accusamus nulla tempora eum odit qui numquam!"
 ---
 
-<!-- ![](/images/front-image.png) -->
 
 Design comps, layouts, wire frames—will your clients accept that you go about things the facile way? Authorities in our business will tell in no uncertain terms that Lorem Ipsum is that huge, huge no no to forswear forever.
 
