@@ -42,11 +42,7 @@
 	font-weight: 600;
 }
 
-#book-list p {
-	/*padding: 0px;*/
+.red {
+	background-color: red;
 }
-
-
-
-
 
