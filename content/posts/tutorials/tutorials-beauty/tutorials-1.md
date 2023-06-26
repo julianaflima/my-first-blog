@@ -1,5 +1,5 @@
 ---
-title: "Lorem ipsum dolor sit amet consectetur adipisicing 1"
+title: "Beauty Lorem ipsum dolor sit amet consectetur adipisicing 1"
 date: 2022-11-20T09:03:20-08:00
 draft: false
 

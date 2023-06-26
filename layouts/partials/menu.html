@@ -33,7 +33,7 @@
 									</a>
 							
 								{{ if .HasChildren }}
-									<ul class="dropdown-menu">
+									<ul class="dropdown-menu position-absolute">
 										{{ range .Children }}
 											<li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
 										{{ end }}

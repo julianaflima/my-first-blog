@@ -1,5 +1,5 @@
 ---
-title: "Lorem ipsum dolor sit amet consectetur adipisicing 2"
+title: "Technology Lorem ipsum dolor sit amet consectetur adipisicing 2"
 date: 2022-11-22T09:03:20-08:00
 draft: false
 
