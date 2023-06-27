@@ -5,7 +5,7 @@ draft: false
 
 tag: "Design post"
 
-main_picture: "/images/front-image.png"
+main_picture: "images/front-image.png"
 
 short_description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse distinctio laudantium vero tenetur accusamus nulla tempora eum odit qui numquam!"
 ---

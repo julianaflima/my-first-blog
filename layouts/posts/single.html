@@ -2,7 +2,9 @@
 {{ partial "posts/hero_single.html" . }}
 
 <div class="container p-0">
-	<img src="{{ .Params.main_picture }}" alt="" class="img-fluid" />
+		{{ $image := resources.Get .Params.main_picture }}
+		{{ $image := $image.Resize "1420x" }}
+		<img src="{{ $image.Permalink }}" alt="" class="img-fluid" />
 </div>
 
 <section>

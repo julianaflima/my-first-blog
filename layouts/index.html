@@ -39,7 +39,9 @@
 					<div>{{ .Params.short_description}}</div>
 				</div>
 				<div class="col-4">
-					<img src="/images/second-image.png" alt="" class="img-fluid" />
+					{{ $thumbnail := resources.Get "images/thumbnail.png" }}
+					{{ $thumbnail := $thumbnail.Resize "255x"}}
+					<img src="{{ $thumbnail.Permalink }}" alt="" class="img-fluid" />
 				</div>
 			</div>
 			{{ end }} {{ end }} {{ end }}
