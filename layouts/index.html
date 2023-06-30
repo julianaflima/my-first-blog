@@ -2,53 +2,58 @@
 
 {{ partial "hero_home.html" . }}
 
-<section class="container">
-	<div class="big-margin-y mt-5 pt-5">
-		<div class="mb-140">
+<section>
+	<div  class="container mt-100px mb-160">
+		<div class="mx-225px">
 			{{ with .Site.GetPage "/posts/" }} 
-			{{ range first 3 .Pages }}
-			<h1 class="fw-bold mb-5">
-				<a
-					href="{{ .Permalink }}"
-					class="link-underline link-underline-opacity-0 link-dark"
-				>
-					{{ .Title }}
-				</a>
-			</h1>
-			{{ range first 3 .Pages }}
-			<div class="row gap-5 mb-5 pb-3">
-				<div class="col">
-					<div class="d-flex gap-3 pb-2">
-						<div
-							class="text-bg-secondary px-2 py-1 text-uppercase font-size-13"
-						>
-							{{ .Params.tag }}
+				{{ range first 3 .Pages }}
+					<div class="mb-140">
+						<h1 class="fw-bold mb-60px">
+							<a
+								href="{{ .Permalink }}"
+								class="link-underline link-underline-opacity-0 link-dark"
+							>
+								{{ .Title }}
+							</a>
+						</h1>
+						{{ range first 3 .Pages }}
+						<div class="row gap-6 mb-60px align-items-center">
+							<div class="col py-2 pe-0">
+								<div class="d-flex mb-4">
+									<div
+										class="text-bg-secondary px-12px pt-2 pb-10px text-uppercase fs-13px rounded-start lh-120 fw-semibold"
+									>
+										{{ .Params.tag }}
+									</div>
+									<div class="px-12px pt-2 pb-10px fs-13px text-uppercase lh-120">
+										{{ .Date | time.Format ":date_long" }}
+									</div>
+								</div>
+								<h2 class="mb-12px">
+									<a
+										href="{{ .Permalink }}"
+										class="link-underline link-underline-opacity-0 link-dark lh-130 fs-3 fw-bold"
+									>
+										{{ .Title }}
+									</a>
+								</h2>
+								<div class="fs-18px">
+									{{ .Params.short_description}}
+								</div>
+							</div>
+							<div class="col-4 ps-0">
+								{{ $thumbnail := resources.Get "images/thumbnail.png" }} 
+								{{ $thumbnail := $thumbnail.Resize "300x210"}}
+								<img src="{{ $thumbnail.Permalink }}" alt="" class="img-fluid" />
+							</div>
 						</div>
-						<div class="px-2 py-1 font-size-13">
-							{{ .Date | time.Format ":date_long" }}
-						</div>
-					</div>
-					<h2>
-						<a
-							href="{{ .Permalink }}"
-							class="link-underline link-underline-opacity-0 link-dark"
-						>
-							{{ .Title }}
-						</a>
-					</h2>
-					<div>{{ .Params.short_description}}</div>
-				</div>
-				<div class="col-4">
-					{{ $thumbnail := resources.Get "images/thumbnail.png" }}
-					{{ $thumbnail := $thumbnail.Resize "255x"}}
-					<img src="{{ $thumbnail.Permalink }}" alt="" class="img-fluid" />
-				</div>
-			</div>
-			{{ end }} {{ end }} {{ end }}
+						{{ end }}
+					</div> 
+				{{ end }} 
+			{{ end }}
 		</div>
-	</div>
 </section>
 
-{{ partial "subscribe.html" . }}
+{{ partial "subscribe.html" . }} 
 
 {{ end }}

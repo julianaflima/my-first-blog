@@ -1,20 +1,22 @@
 <section>
 	<div class="container">
-		<div class="big-padding">
-			<div id="lib-title">
+		<div class="mx-225px my-110px">
+			<div class="fs-36px fw-bold mb-20px">
 			{{ .Content}}
 			</div>
 
 				{{ range (sort .Pages "Title" "desc" ) }}
-					<div id="lib-year" class="mb-4">{{ .Title }}</div>
-					<div class="row row-cols-4 g-4 mb-5">
-						{{ range .Pages }}
-							{{ if .Params.image }}
-								{{ $image := resources.Get .Params.image}}
-								{{ $image := $image.Resize "255x" }}
-								<img src="{{ $image.Permalink }}" alt="">
-							{{ end}}
-						{{ end }}
+					<div class="mb-80px">
+						<div class="fw-semibold lh-120 mb-40px">{{ .Title }}</div>
+						<div class="row row-cols-4 gy-5">
+							{{ range .Pages }}
+								{{ if .Params.image }}
+									{{ $image := resources.Get .Params.image}}
+									{{ $image := $image.Resize "255x" }}
+									<img src="{{ $image.Permalink }}" alt="">
+								{{ end}}
+							{{ end }}
+						</div>
 					</div>
 				{{ end }}
 			

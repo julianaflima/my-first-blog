@@ -1,17 +1,19 @@
 <section>
-	<div class="container text-bg-primary">
-		<div class="big-padding">
-			<div class="d-flex">
-				<div class="text-uppercase bg-light d-flex rounded border border-light">
-					<div class="bg-primary px-2 py-1 rounded-start">
-						{{ .Params.tag }}
-					</div>
-					<div class="px-2 py-1 bg-light text-primary rounded-end">
-						{{ .Date | time.Format ":date_long" }}
+	<div class="container">
+		<div class="text-bg-primary">
+			<div class="pt-79px pb-141px mx-225px lh-120">
+				<div class="d-flex mb-26px">
+					<div class="text-uppercase bg-light d-flex rounded border border-light fs-13px">
+						<div class="bg-primary pt-2 pb-10px px-12px rounded-start fw-semibold">
+							{{ .Params.tag }}
+						</div>
+						<div class="pt-2 pb-10px px-12px bg-light text-primary rounded-end fw-medium">
+							{{ .Date | time.Format ":date_long" }}
+						</div>
 					</div>
 				</div>
+				<h1 class="fw-bold fs-52px fw-bold letter-spacing lh-120">{{ .Title }}</h1>
 			</div>
-			<h1 class="fw-bold font-size-52">{{ .Title }}</h1>
 		</div>
 	</div>
 </section>

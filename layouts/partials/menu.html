@@ -1,53 +1,57 @@
 <!-- Nav bar -->
-<div class="container text-bg-primary mt-3">
-	<nav class="navbar">
-		<div class="container-fluid pt-3 px-5">
-			<div>
-				<a href="{{ .Site.BaseURL }}">
-					{{ $logo := resources.Get "images/navbar_logo.png" }}
-					<img src="{{ $logo.Permalink }}" alt="" />
-				</a>
-			</div>
+<section>
+	<div class="container">
+		<div class="text-bg-primary mt-30px">
+			<nav class="navbar mx-56px p-0">
+				<div class="container-fluid mt-40px mb-76px">
+					<div>
+						<a href="{{ .Site.BaseURL }}">
+							{{ $logo := resources.Get "images/navbar_logo.png" }}
+							<img src="{{ $logo.Permalink }}" alt="" />
+						</a>
+					</div>
 
-			<div>
-				<ul class="navbar-nav d-flex flex-row gap-3">
-					{{ $page := .Page }}
-					{{ range .Site.Menus.main }}
-					<li class="nav-item 
-					{{ if .HasChildren }}
-							dropdown
-					{{ end }}
-					">
-						<a class='nav-link text-bg-primary
-						{{ if $page.IsMenuCurrent "main" . }}
-							fw-bold
-						{{ end }}
-						{{ if .HasChildren }}
-							dropdown-toggle
-						{{ end }}
-						' 
-						{{ if .HasChildren }}
-							data-bs-toggle="dropdown"
-						{{ end }}
-						href="{{ .URL }}"> 
-						{{ .Name }}
-							</a>
-					
-						{{ if .HasChildren }}
-							<ul class="dropdown-menu position-absolute">
-								{{ range .Children }}
-									<li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+					<div>
+						<ul class="navbar-nav d-flex flex-row gap-40px">
+							{{ $page := .Page }}
+							{{ range .Site.Menus.main }}
+							<li class="nav-item 
+							{{ if .HasChildren }}
+									dropdown
+							{{ end }}
+							">
+								<a class='nav-link p-0 text-bg-primary
+								{{ if $page.IsMenuCurrent "main" . }}
+									fw-bold
 								{{ end }}
-							</ul>
-						{{ end }}
-					</li>	
-					{{end}} 
-				</ul>
-			</div>
+								{{ if .HasChildren }}
+									dropdown-toggle
+								{{ end }}
+								' 
+								{{ if .HasChildren }}
+									data-bs-toggle="dropdown"
+								{{ end }}
+								href="{{ .URL }}"> 
+								{{ .Name }}
+									</a>
+							
+								{{ if .HasChildren }}
+									<ul class="dropdown-menu position-absolute">
+										{{ range .Children }}
+											<li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+										{{ end }}
+									</ul>
+								{{ end }}
+							</li>	
+							{{end}} 
+						</ul>
+					</div>
 
-			<div>
-				<button class="btn text-light slightly-light">Subscribe</button>
-			</div>
+					<div>
+						<button class="btn text-light border-0 bg-dark-subtle py-10px px-20px">Subscribe</button>
+					</div>
+				</div>
+			</nav>
 		</div>
-	</nav>
-</div>
+	</div>
+</section>

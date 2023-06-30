@@ -1,7 +1,7 @@
 ---
 title: "Design Tools"
 tag: "Design Tools"
-tag_line: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, at?"
+tag_line: "Insights about my personal and work life, and the in-betweens"
 menu: 
   main:
     weight: 100
