@@ -9,6 +9,16 @@ $primary: #232e52;
 $secondary: #ebf2fe;
 $info: #8ceead;
 $dark-bg-subtle: rgba(255, 255, 255, 0.1);
+$input-placeholder-color: rgba(17, 17, 24, 0.60);
+$body-color: #232e52;;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  10:10px,
+);
 
 @import "bootstrap/variables";
 @import "bootstrap/variables-dark";
@@ -73,6 +83,7 @@ $utilities: map-merge(
 				14px: 0.875rem,
 				18px: 1.125rem,
 				26px: 1.625rem,
+				28px: 1.75rem,
 				36px: 2.25rem,
 				52px: 3.25rem,
 			)

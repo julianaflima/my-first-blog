@@ -11,37 +11,39 @@
 						<h1 class="fw-bold mb-60px">
 							<a
 								href="{{ .Permalink }}"
-								class="link-underline link-underline-opacity-0 link-dark"
+								class="link-underline link-underline-opacity-0"
 							>
 								{{ .Title }}
 							</a>
 						</h1>
 						{{ range first 3 .Pages }}
-						<div class="row gap-6 mb-60px align-items-center">
-							<div class="col py-2 pe-0">
-								<div class="d-flex mb-4">
-									<div
-										class="text-bg-secondary px-12px pt-2 pb-10px text-uppercase fs-13px rounded-start lh-120 fw-semibold"
-									>
-										{{ .Params.tag }}
+						<div class="row g-5 mb-60px align-items-center">
+							<div class="col">
+								<div class="py-2">
+									<div class="d-flex mb-4">
+										<div
+											class="text-bg-secondary px-12px pt-2 pb-10px text-uppercase fs-13px rounded-start lh-120 fw-semibold"
+										>
+											{{ .Params.tag }}
+										</div>
+										<div class="px-12px pt-2 pb-10px fs-13px text-uppercase lh-120">
+											{{ .Date | time.Format ":date_long" }}
+										</div>
 									</div>
-									<div class="px-12px pt-2 pb-10px fs-13px text-uppercase lh-120">
-										{{ .Date | time.Format ":date_long" }}
+									<h2 class="mb-12px">
+										<a
+											href="{{ .Permalink }}"
+											class="link-underline link-underline-opacity-0 lh-130 fs-3 fw-bold"
+										>
+											{{ .Title }}
+										</a>
+									</h2>
+									<div class="fs-18px">
+										{{ .Params.short_description}}
 									</div>
-								</div>
-								<h2 class="mb-12px">
-									<a
-										href="{{ .Permalink }}"
-										class="link-underline link-underline-opacity-0 link-dark lh-130 fs-3 fw-bold"
-									>
-										{{ .Title }}
-									</a>
-								</h2>
-								<div class="fs-18px">
-									{{ .Params.short_description}}
 								</div>
 							</div>
-							<div class="col-4 ps-0">
+							<div class="col-4">
 								{{ $thumbnail := resources.Get "images/thumbnail.png" }} 
 								{{ $thumbnail := $thumbnail.Resize "300x210"}}
 								<img src="{{ $thumbnail.Permalink }}" alt="" class="img-fluid" />

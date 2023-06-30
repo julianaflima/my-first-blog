@@ -77,18 +77,18 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-color: #232e52;
+  --bs-body-color-rgb: 35, 46, 82;
   --bs-body-bg: #fff;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
-  --bs-secondary-color: rgba(33, 37, 41, 0.75);
-  --bs-secondary-color-rgb: 33, 37, 41;
+  --bs-secondary-color: rgba(35, 46, 82, 0.75);
+  --bs-secondary-color-rgb: 35, 46, 82;
   --bs-secondary-bg: #e9ecef;
   --bs-secondary-bg-rgb: 233, 236, 239;
-  --bs-tertiary-color: rgba(33, 37, 41, 0.5);
-  --bs-tertiary-color-rgb: 33, 37, 41;
+  --bs-tertiary-color: rgba(35, 46, 82, 0.5);
+  --bs-tertiary-color-rgb: 35, 46, 82;
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
@@ -1423,7 +1423,7 @@ progress {
     display: block;
     padding: 0; }
   .form-control::placeholder {
-    color: var(--bs-secondary-color);
+    color: rgba(17, 17, 24, 0.6);
     opacity: 1; }
   .form-control:disabled {
     background-color: var(--bs-secondary-bg);
@@ -2778,7 +2778,7 @@ textarea.form-control-lg {
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2835, 46, 82, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
   --bs-navbar-toggler-border-radius: var(--bs-border-radius);
   --bs-navbar-toggler-focus-width: 0.25rem;
@@ -3796,6 +3796,9 @@ textarea.form-control-lg {
 .border-5 {
   border-width: 5px !important; }
 
+.border-10 {
+  border-width: 10px !important; }
+
 .border-opacity-10 {
   --bs-border-opacity: 0.1; }
 
@@ -4485,6 +4488,9 @@ textarea.form-control-lg {
 
 .fs-26px {
   font-size: calc(1.2875rem + 0.45vw) !important; }
+
+.fs-28px {
+  font-size: calc(1.3rem + 0.6vw) !important; }
 
 .fs-36px {
   font-size: calc(1.35rem + 1.2vw) !important; }
@@ -7379,6 +7385,8 @@ textarea.form-control-lg {
     font-size: 1.5rem !important; }
   .fs-26px {
     font-size: 1.625rem !important; }
+  .fs-28px {
+    font-size: 1.75rem !important; }
   .fs-36px {
     font-size: 2.25rem !important; }
   .fs-52px {
