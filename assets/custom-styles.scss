@@ -12,3 +12,13 @@
 	width: 120%;
 	margin-left: -10%;
 }
+
+.quarter {
+  box-sizing: border-box;
+  background-color: transparent;
+  width: 6.5rem;
+  height: 6.4rem;
+  border-radius: 0 0 95% 0;
+  border-right: 23px solid #F7DF61;
+  border-bottom: 23px solid #F7DF61;
+}

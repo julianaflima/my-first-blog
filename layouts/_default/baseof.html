@@ -4,17 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>Home</title>
-		{{ $scss := resources.Get "bootstrap.scss" }}
+
+		{{ $scss := resources.Get "style.scss" }}
 		{{ $tocss := resources.ToCSS $scss }}
-
-
 		<link rel="stylesheet" href="{{ $tocss.Permalink }}">
-		<link rel="stylesheet" href="/css/style.css"/>
 
 		{{ $javascript := resources.Get "index.js" }}
 		{{ $js := js.Build $javascript}}
-
-		
 		<script src="{{ $js.Permalink }}" defer></script>
 
 	</head>

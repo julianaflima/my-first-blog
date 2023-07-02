@@ -9,7 +9,7 @@ $primary: #232e52;
 $secondary: #ebf2fe;
 $info: #8ceead;
 $dark-bg-subtle: rgba(255, 255, 255, 0.1);
-$input-placeholder-color: rgba(17, 17, 24, 0.60);
+$input-placeholder-color: rgba(17, 17, 24, 0.60); 
 $body-color: #232e52;;
 $border-widths: (
   1: 1px,
@@ -271,7 +271,8 @@ $utilities: map-merge(
 				5: 1rem * 3,
 				79px: 4.9375rem,
 				80px: 5rem,
-				97px: 6.0625rem
+				97px: 6.0625rem,
+				100px: 6.25rem,
 			)
 		),
 
