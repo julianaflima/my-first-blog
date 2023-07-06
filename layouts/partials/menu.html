@@ -2,9 +2,9 @@
 <section>
 	<div class="container">
 		<div class="text-bg-primary mt-30px">
-			<nav class="navbar mx-56px p-0">
-				<div class="container-fluid mt-40px mb-76px">
-					<div>
+			<nav class="navbar mx-lg-56px mx-5 p-0">
+				<div class="container-fluid mt-40px mb-lg-76px d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between">
+					<div class="mb-4 mb-lg-0">
 						<a href="{{ .Site.BaseURL }}">
 							{{ $logo := resources.Get "images/navbar_logo.png" }}
 							<img src="{{ $logo.Permalink }}" alt="" />
@@ -12,10 +12,10 @@
 					</div>
 
 					<div>
-						<ul class="navbar-nav d-flex flex-row gap-40px">
+						<ul class="navbar-nav d-flex flex-row gap-40px fs-lg-6">
 							{{ $page := .Page }}
 							{{ range .Site.Menus.main }}
-							<li class="nav-item 
+							<li class="nav-item text-center
 							{{ if .HasChildren }}
 									dropdown
 							{{ end }}
@@ -47,7 +47,7 @@
 						</ul>
 					</div>
 
-					<div>
+					<div class="d-none d-lg-block">
 						<button class="btn text-light border-0 bg-dark-subtle py-10px px-20px">Subscribe</button>
 					</div>
 				</div>

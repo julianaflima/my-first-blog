@@ -2,34 +2,38 @@
 {{ partial "posts/hero_single.html" . }}
 
 <section>
-	<div class="container rounded-bottom-3">
-		{{ $image := resources.Get .Params.main_picture }}
-			{{ if $image }}
-			{{ $image := $image.Resize "1420x" }}
-		{{ end }}
-		<img src="{{ $image.Permalink }}" alt="" class="img-fluid" />
-</div>
+	<div class="container">
+		<div class="rounded-bottom-3">
+			{{ $image := resources.Get .Params.main_picture }}
+				{{ if $image }}
+				{{ $image := $image.Resize "1420x" }}
+			{{ end }}
+			<img src="{{ $image.Permalink }}" alt="" class="img-fluid" />
+		</div>
+	<!-- </div> -->
 
-	<div class="d-flex justify-content-center">
+	<div class="d-lg-flex justify-content-lg-center">
 		<div
-			class="mw-45 d-flex flex-column justify-content-center align-items-center gap-2 mt-100px mb-120"
+			class="max-width-425rem d-flex flex-column justify-content-center align-items-center gap-2 mt-100px mb-120 lh-150 mx-5 mx-lg-0"
 			id="content"
 		>
 			{{ .Content }}
 		</div>
+	</div>
+
 	</div>
 </section>
 
 <!-- Other posts -->
 <section>
 	<div class="container">
-		<div class="mx-225px border-top pt-80px mb-160">
+		<div class="mx-lg-225px border-top pt-80px mb-160">
 			<h1 class="fw-bold mb-60px">Other interesting posts </h1>
 
 			{{ with .CurrentSection }}
 				{{ range first 3 .Pages }}
-					<div class="row gap-5 mb-80px align-items-center">
-						<div class="col my-2">
+					<div class="row g-5 mb-80px align-items-center d-flex flex-column-reverse flex-lg-row">
+						<div class="col-lg-8 col-12 my-2">
 							<div class="d-flex mb-4">
 								<div class="text-bg-secondary pt-2 pb-10px px-12px text-uppercase fs-13px rounded-start">
 									{{ .Params.tag }}
@@ -45,7 +49,7 @@
 								{{ .Params.short_description }}
 							</div>
 						</div>
-						<div class="col-4">
+						<div class="col-lg-4 col-12 d-flex justify-content-center">
 							<img src="/images/second-image.png" alt="" class="img-fluid" />
 						</div>
 					</div>

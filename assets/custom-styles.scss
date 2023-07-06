@@ -1,3 +1,6 @@
+$bigger-elements-width-lg: 48.75rem;
+$bigger-elements-width: 110%;
+$bigger-elements-margin-offset: -5%;
 
 
 /*CAN'T USE BOOTSTRAP HERE*/
@@ -7,10 +10,8 @@
 
 /*USED IN SINGLE POST TO GIVE MARGINS TO PICTURE*/
 #content img {
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-	width: 120%;
-	margin-left: -10%;
+  margin: 1.5rem 0rem 1.5rem $bigger-elements-margin-offset;
+	width: $bigger-elements-width;
 }
 
 .quarter {
@@ -21,4 +22,33 @@
   border-radius: 0 0 95% 0;
   border-right: 23px solid #F7DF61;
   border-bottom: 23px solid #F7DF61;
+}
+
+#content blockquote {
+  background-color: #EBF2FE;
+  width: $bigger-elements-width;
+  padding: 3.12rem;
+  border-radius: 8px;
+  border-top: 4px solid #1D54C0;
+  font-size: 1.375rem;
+  line-height: 150%;
+}
+
+#content blockquote p {
+  margin: 0px;
+}
+
+// A partir de 992px, incluso
+@media (min-width: 992px) {
+
+  #content img,
+  #content blockquote {
+  width: $bigger-elements-width-lg;
+  // margin-left: -10%;
+  }
+
+  .max-width-425rem {
+    max-width: 42.5rem;
+  }
+  
 }

@@ -4,7 +4,7 @@
 
 <section>
 	<div  class="container mt-100px mb-160">
-		<div class="mx-225px">
+		<div class="mx-lg-225px d-flex flex-column justify-content-center">
 			{{ with .Site.GetPage "/posts/" }} 
 				{{ range first 3 .Pages }}
 					<div class="mb-140">
@@ -17,8 +17,8 @@
 							</a>
 						</h1>
 						{{ range first 3 .Pages }}
-						<div class="row g-5 mb-60px align-items-center">
-							<div class="col">
+						<div class="row g-5 mb-60px align-items-center d-flex flex-column-reverse flex-lg-row">
+							<div class="col-lg-8 col-12">
 								<div class="py-2">
 									<div class="d-flex mb-4">
 										<div
@@ -43,9 +43,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-4">
+							<div class="col-lg-4 col-12 d-flex justify-content-center">
 								{{ $thumbnail := resources.Get "images/thumbnail.png" }} 
-								{{ $thumbnail := $thumbnail.Resize "300x210"}}
+								{{ $thumbnail := $thumbnail.Resize "696x437"}}
 								<img src="{{ $thumbnail.Permalink }}" alt="" class="img-fluid" />
 							</div>
 						</div>
