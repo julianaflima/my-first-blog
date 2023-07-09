@@ -1,5 +1,4 @@
 $bigger-elements-width-lg: 48.75rem;
-$bigger-elements-width: 110%;
 $bigger-elements-margin-offset: -5%;
 
 
@@ -10,8 +9,8 @@ $bigger-elements-margin-offset: -5%;
 
 /*USED IN SINGLE POST TO GIVE MARGINS TO PICTURE*/
 #content img {
-  margin: 1.5rem 0rem 1.5rem $bigger-elements-margin-offset;
-	width: $bigger-elements-width;
+  margin: 1.5rem auto 1.5rem auto;
+	width: 100%;
 }
 
 .quarter {
@@ -26,7 +25,6 @@ $bigger-elements-margin-offset: -5%;
 
 #content blockquote {
   background-color: #EBF2FE;
-  width: $bigger-elements-width;
   padding: 3.12rem;
   border-radius: 8px;
   border-top: 4px solid #1D54C0;

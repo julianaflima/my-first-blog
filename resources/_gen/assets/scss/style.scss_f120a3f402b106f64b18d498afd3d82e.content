@@ -7544,8 +7544,8 @@ textarea.form-control-lg {
 
 /*USED IN SINGLE POST TO GIVE MARGINS TO PICTURE*/
 #content img {
-  margin: 1.5rem 0rem 1.5rem -5%;
-  width: 110%; }
+  margin: 1.5rem auto 1.5rem auto;
+  width: 100%; }
 
 .quarter {
   box-sizing: border-box;
@@ -7558,7 +7558,6 @@ textarea.form-control-lg {
 
 #content blockquote {
   background-color: #EBF2FE;
-  width: 110%;
   padding: 3.12rem;
   border-radius: 8px;
   border-top: 4px solid #1D54C0;
