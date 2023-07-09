@@ -4399,6 +4399,10 @@ textarea.form-control-lg {
   padding-top: 0.625rem !important;
   padding-bottom: 0.625rem !important; }
 
+.py-14px {
+  padding-top: 0.875rem !important;
+  padding-bottom: 0.875rem !important; }
+
 .py-18px {
   padding-top: 1.125rem !important;
   padding-bottom: 1.125rem !important; }
@@ -5569,6 +5573,9 @@ textarea.form-control-lg {
   .py-sm-10px {
     padding-top: 0.625rem !important;
     padding-bottom: 0.625rem !important; }
+  .py-sm-14px {
+    padding-top: 0.875rem !important;
+    padding-bottom: 0.875rem !important; }
   .py-sm-18px {
     padding-top: 1.125rem !important;
     padding-bottom: 1.125rem !important; }
@@ -6021,6 +6028,9 @@ textarea.form-control-lg {
   .py-md-10px {
     padding-top: 0.625rem !important;
     padding-bottom: 0.625rem !important; }
+  .py-md-14px {
+    padding-top: 0.875rem !important;
+    padding-bottom: 0.875rem !important; }
   .py-md-18px {
     padding-top: 1.125rem !important;
     padding-bottom: 1.125rem !important; }
@@ -6473,6 +6483,9 @@ textarea.form-control-lg {
   .py-lg-10px {
     padding-top: 0.625rem !important;
     padding-bottom: 0.625rem !important; }
+  .py-lg-14px {
+    padding-top: 0.875rem !important;
+    padding-bottom: 0.875rem !important; }
   .py-lg-18px {
     padding-top: 1.125rem !important;
     padding-bottom: 1.125rem !important; }
@@ -6925,6 +6938,9 @@ textarea.form-control-lg {
   .py-xl-10px {
     padding-top: 0.625rem !important;
     padding-bottom: 0.625rem !important; }
+  .py-xl-14px {
+    padding-top: 0.875rem !important;
+    padding-bottom: 0.875rem !important; }
   .py-xl-18px {
     padding-top: 1.125rem !important;
     padding-bottom: 1.125rem !important; }
@@ -7377,6 +7393,9 @@ textarea.form-control-lg {
   .py-xxl-10px {
     padding-top: 0.625rem !important;
     padding-bottom: 0.625rem !important; }
+  .py-xxl-14px {
+    padding-top: 0.875rem !important;
+    padding-bottom: 0.875rem !important; }
   .py-xxl-18px {
     padding-top: 1.125rem !important;
     padding-bottom: 1.125rem !important; }
@@ -7542,11 +7561,6 @@ textarea.form-control-lg {
 .letter-spacing {
   letter-spacing: -1.56px; }
 
-/*USED IN SINGLE POST TO GIVE MARGINS TO PICTURE*/
-#content img {
-  margin: 1.5rem auto 1.5rem auto;
-  width: 100%; }
-
 .quarter {
   box-sizing: border-box;
   background-color: transparent;
@@ -7568,9 +7582,9 @@ textarea.form-control-lg {
   margin: 0px; }
 
 @media (min-width: 992px) {
-  #content img,
-  #content blockquote {
-    width: 48.75rem; }
+  #content blockquote,
+  .width-4875rem {
+    width: 48.75rem !important; }
   .max-width-425rem {
     max-width: 42.5rem; }
   .rounded-lg-start {

@@ -21,7 +21,7 @@ Not so fast, I'd say, there are some redeeming factors in favor of greeking text
 
 The toppings you may chose for that TV dinner pizza slice when you forgot to shop for foods, the paint you may slap on your face to impress the new boss is your business. But what about your daily bread? 
 
-![](/images/second-image.png)
+{{<img-w-caption src="/images/second-image.png" caption="Image caption or credit">}}
 
 The toppings you may chose for that TV dinner pizza slice when you forgot to shop for foods, the paint you may slap on your face to impress the new boss is your business. But what about your daily bread? Not so fast, I'd say, there are some redeeming factors in favor of greeking text, as its use is merely the symptom of a worse problem to take into consideration.
 

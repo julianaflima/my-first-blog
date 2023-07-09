@@ -1,16 +1,8 @@
 $bigger-elements-width-lg: 48.75rem;
-$bigger-elements-margin-offset: -5%;
-
 
 /*CAN'T USE BOOTSTRAP HERE*/
 .letter-spacing {
 	letter-spacing: -1.56px;
-}
-
-/*USED IN SINGLE POST TO GIVE MARGINS TO PICTURE*/
-#content img {
-  margin: 1.5rem auto 1.5rem auto;
-	width: 100%;
 }
 
 .quarter {
@@ -39,11 +31,10 @@ $bigger-elements-margin-offset: -5%;
 // A partir de 992px, incluso
 @media (min-width: 992px) {
 
-  #content img,
-  #content blockquote {
-  width: $bigger-elements-width-lg;
-  // margin-left: -10%;
-  }
+  #content blockquote,
+  .width-4875rem {
+    width: $bigger-elements-width-lg !important;
+  } 
 
   .max-width-425rem {
     max-width: 42.5rem;
