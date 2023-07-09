@@ -50,5 +50,15 @@ $bigger-elements-margin-offset: -5%;
   .max-width-425rem {
     max-width: 42.5rem;
   }
+
+  .rounded-lg-start {
+    border-top-right-radius: 0rem !important;
+    border-bottom-right-radius: 0rem !important;
+  }
+
+  .rounded-lg-end {
+    border-top-left-radius: 0rem !important;
+    border-bottom-left-radius: 0rem !important;
+  }
   
 }
